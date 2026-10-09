@@ -1,0 +1,604 @@
+{
+  "linear": {
+    "(x,y) | linear | 0.01": {
+      "beta": [
+        1.000238806170241,
+        2.000055102062119
+      ],
+      "train_rmse": 0.00579616616199587,
+      "test_rmse": 0.005738891235695781
+    },
+    "(x,y) | linear | 0.1": {
+      "beta": [
+        1.0023880617023861,
+        2.0005510206212165
+      ],
+      "train_rmse": 0.05796166161995866,
+      "test_rmse": 0.05738891235695704
+    },
+    "(x,y) | cubic | 0.01": {
+      "beta": [
+        0.06606577577011379,
+        0.4514543362264761
+      ],
+      "train_rmse": 0.02148697053770911,
+      "test_rmse": 0.02214132491861429
+    },
+    "(x,y) | cubic | 0.1": {
+      "beta": [
+        0.06821503130226714,
+        0.4519502547855607
+      ],
+      "train_rmse": 0.06142213037737823,
+      "test_rmse": 0.06286716791746165
+    },
+    "(x,x^2,x^3,y) | linear | 0.01": {
+      "beta": [
+        0.9999367081304058,
+        2.0058655168813857,
+        -0.017933065362740308,
+        0.013501408813681337
+      ],
+      "train_rmse": 0.005788228827391289,
+      "test_rmse": 0.00574400673483183
+    },
+    "(x,x^2,x^3,y) | linear | 0.1": {
+      "beta": [
+        0.9993670813063318,
+        2.0586551688143118,
+        -0.17933065365559742,
+        0.13501408814408933
+      ],
+      "train_rmse": 0.05788228827391284,
+      "test_rmse": 0.05744006734770161
+    },
+    "(x,x^2,x^3,y) | cubic | 0.01": {
+      "beta": [
+        -6.329186934550535e-05,
+        1.0058655168810446,
+        -1.0179330653645593,
+        0.5135014088136813
+      ],
+      "train_rmse": 0.005788228827391285,
+      "test_rmse": 0.00574400673476786
+    },
+    "(x,x^2,x^3,y) | cubic | 0.1": {
+      "beta": [
+        -0.0006329186933626829,
+        1.0586551688130044,
+        -1.1793306536536647,
+        0.6350140881428388
+      ],
+      "train_rmse": 0.05788228827391285,
+      "test_rmse": 0.05744006734769988
+    }
+  },
+  "extrapolation": {
+    "(x,y) | linear | 0.01": {
+      "true": 21.0,
+      "pred": 21.00078982679143,
+      "error": 0.0007898267914292489
+    },
+    "(x,y) | linear | 0.1": {
+      "true": 21.0,
+      "pred": 21.007898267914552,
+      "error": 0.007898267914551838
+    },
+    "(x,y) | cubic | 0.01": {
+      "true": 410.0,
+      "pred": 4.580609138034875,
+      "error": -405.4193908619651
+    },
+    "(x,y) | cubic | 0.1": {
+      "true": 410.0,
+      "pred": 4.587717579157874,
+      "error": -405.41228242084213
+    },
+    "(x,x^2,x^3,y) | linear | 0.01": {
+      "true": 21.0,
+      "pred": 32.76669415435157,
+      "error": 11.766694154351569
+    },
+    "(x,x^2,x^3,y) | linear | 0.1": {
+      "true": 21.0,
+      "pred": 138.66694154797904,
+      "error": 117.66694154797904
+    },
+    "(x,x^2,x^3,y) | cubic | 0.01": {
+      "true": 410.0,
+      "pred": 421.76669415416654,
+      "error": 11.766694154166544
+    },
+    "(x,x^2,x^3,y) | cubic | 0.1": {
+      "true": 410.0,
+      "pred": 527.666941546909,
+      "error": 117.66694154690902
+    }
+  },
+  "irreducible": {
+    "linear | 0.01": {
+      "theory": 0.005773502691896258,
+      "empirical_test": 0.00572269032389651
+    },
+    "linear | 0.1": {
+      "theory": 0.05773502691896258,
+      "empirical_test": 0.057226903238965184
+    },
+    "cubic | 0.01": {
+      "theory": 0.005773502691896258,
+      "empirical_test": 0.005722690323896518
+    },
+    "cubic | 0.1": {
+      "theory": 0.05773502691896258,
+      "empirical_test": 0.057226903238965184
+    }
+  },
+  "q7": {
+    "degrees": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "train": [
+      0.06142213037737823,
+      0.05907157240700237,
+      0.05788228827391285,
+      0.05788042559347596,
+      0.05787335168572147,
+      0.057820838882681476,
+      0.05780685108459883,
+      0.05780599266901063,
+      0.05776090977130065,
+      0.0577538034555154
+    ],
+    "test": [
+      0.06286716791746165,
+      0.05892638524461676,
+      0.05744006734769988,
+      0.05743665444493208,
+      0.057352026645419656,
+      0.05709378488462808,
+      0.057090404695932975,
+      0.057036449389970136,
+      0.05713976844450286,
+      0.057068655435200656
+    ]
+  },
+  "trees": {
+    "(x,y) | linear | 0.01 | 1000": {
+      "train_rmse": 0.5785357461113922,
+      "test_rmse": 0.6005016807481766,
+      "n_nodes": 1,
+      "n_leaves": 1,
+      "depth": 0,
+      "leaf_min": 800,
+      "leaf_max": 800,
+      "leaf_mean": 800.0,
+      "split_features": []
+    },
+    "(x,y) | linear | 0.01 | 50": {
+      "train_rmse": 0.023320972914622276,
+      "test_rmse": 0.02529633135915233,
+      "n_nodes": 53,
+      "n_leaves": 27,
+      "depth": 5,
+      "leaf_min": 19,
+      "leaf_max": 47,
+      "leaf_mean": 29.62962962962963,
+      "split_features": [
+        0
+      ]
+    },
+    "(x,y) | linear | 0.01 | 1": {
+      "train_rmse": 0.0,
+      "test_rmse": 0.008031763035148402,
+      "n_nodes": 1599,
+      "n_leaves": 800,
+      "depth": 15,
+      "leaf_min": 1,
+      "leaf_max": 1,
+      "leaf_mean": 1.0,
+      "split_features": [
+        0
+      ]
+    },
+    "(x,x^2,x^3,y) | linear | 0.01 | 1000": {
+      "train_rmse": 0.5785357461113922,
+      "test_rmse": 0.6005016807481766,
+      "n_nodes": 1,
+      "n_leaves": 1,
+      "depth": 0,
+      "leaf_min": 800,
+      "leaf_max": 800,
+      "leaf_mean": 800.0,
+      "split_features": []
+    },
+    "(x,x^2,x^3,y) | linear | 0.01 | 50": {
+      "train_rmse": 0.023320972914622276,
+      "test_rmse": 0.02529633135915233,
+      "n_nodes": 53,
+      "n_leaves": 27,
+      "depth": 5,
+      "leaf_min": 19,
+      "leaf_max": 47,
+      "leaf_mean": 29.62962962962963,
+      "split_features": [
+        0
+      ]
+    },
+    "(x,x^2,x^3,y) | linear | 0.01 | 1": {
+      "train_rmse": 0.0,
+      "test_rmse": 0.008031763035148402,
+      "n_nodes": 1599,
+      "n_leaves": 800,
+      "depth": 15,
+      "leaf_min": 1,
+      "leaf_max": 1,
+      "leaf_mean": 1.0,
+      "split_features": [
+        0
+      ]
+    },
+    "(x,y) | linear | 0.1 | 1000": {
+      "train_rmse": 0.5815458307635765,
+      "test_rmse": 0.603002034867665,
+      "n_nodes": 1,
+      "n_leaves": 1,
+      "depth": 0,
+      "leaf_min": 800,
+      "leaf_max": 800,
+      "leaf_mean": 800.0,
+      "split_features": []
+    },
+    "(x,y) | linear | 0.1 | 50": {
+      "train_rmse": 0.05542935263456812,
+      "test_rmse": 0.06360826350513506,
+      "n_nodes": 47,
+      "n_leaves": 24,
+      "depth": 5,
+      "leaf_min": 12,
+      "leaf_max": 49,
+      "leaf_mean": 33.333333333333336,
+      "split_features": [
+        0
+      ]
+    },
+    "(x,y) | linear | 0.1 | 1": {
+      "train_rmse": 0.0,
+      "test_rmse": 0.07878605783743314,
+      "n_nodes": 1599,
+      "n_leaves": 800,
+      "depth": 17,
+      "leaf_min": 1,
+      "leaf_max": 1,
+      "leaf_mean": 1.0,
+      "split_features": [
+        0
+      ]
+    },
+    "(x,x^2,x^3,y) | linear | 0.1 | 1000": {
+      "train_rmse": 0.5815458307635765,
+      "test_rmse": 0.603002034867665,
+      "n_nodes": 1,
+      "n_leaves": 1,
+      "depth": 0,
+      "leaf_min": 800,
+      "leaf_max": 800,
+      "leaf_mean": 800.0,
+      "split_features": []
+    },
+    "(x,x^2,x^3,y) | linear | 0.1 | 50": {
+      "train_rmse": 0.05542935263456812,
+      "test_rmse": 0.06360826350513506,
+      "n_nodes": 47,
+      "n_leaves": 24,
+      "depth": 5,
+      "leaf_min": 12,
+      "leaf_max": 49,
+      "leaf_mean": 33.333333333333336,
+      "split_features": [
+        0
+      ]
+    },
+    "(x,x^2,x^3,y) | linear | 0.1 | 1": {
+      "train_rmse": 0.0,
+      "test_rmse": 0.07878605783743314,
+      "n_nodes": 1599,
+      "n_leaves": 800,
+      "depth": 17,
+      "leaf_min": 1,
+      "leaf_max": 1,
+      "leaf_mean": 1.0,
+      "split_features": [
+        0
+      ]
+    },
+    "(x,y) | cubic | 0.01 | 1000": {
+      "train_rmse": 0.13233710499116572,
+      "test_rmse": 0.13684560583503408,
+      "n_nodes": 1,
+      "n_leaves": 1,
+      "depth": 0,
+      "leaf_min": 800,
+      "leaf_max": 800,
+      "leaf_mean": 800.0,
+      "split_features": []
+    },
+    "(x,y) | cubic | 0.01 | 50": {
+      "train_rmse": 0.007590169148859134,
+      "test_rmse": 0.008732543345344313,
+      "n_nodes": 49,
+      "n_leaves": 25,
+      "depth": 6,
+      "leaf_min": 15,
+      "leaf_max": 45,
+      "leaf_mean": 32.0,
+      "split_features": [
+        0
+      ]
+    },
+    "(x,y) | cubic | 0.01 | 1": {
+      "train_rmse": 0.0,
+      "test_rmse": 0.007883373756290401,
+      "n_nodes": 1599,
+      "n_leaves": 800,
+      "depth": 16,
+      "leaf_min": 1,
+      "leaf_max": 1,
+      "leaf_mean": 1.0,
+      "split_features": [
+        0
+      ]
+    },
+    "(x,x^2,x^3,y) | cubic | 0.01 | 1000": {
+      "train_rmse": 0.13233710499116572,
+      "test_rmse": 0.13684560583503408,
+      "n_nodes": 1,
+      "n_leaves": 1,
+      "depth": 0,
+      "leaf_min": 800,
+      "leaf_max": 800,
+      "leaf_mean": 800.0,
+      "split_features": []
+    },
+    "(x,x^2,x^3,y) | cubic | 0.01 | 50": {
+      "train_rmse": 0.007590169148859134,
+      "test_rmse": 0.008732543345344313,
+      "n_nodes": 49,
+      "n_leaves": 25,
+      "depth": 6,
+      "leaf_min": 15,
+      "leaf_max": 45,
+      "leaf_mean": 32.0,
+      "split_features": [
+        0
+      ]
+    },
+    "(x,x^2,x^3,y) | cubic | 0.01 | 1": {
+      "train_rmse": 0.0,
+      "test_rmse": 0.007883373756290401,
+      "n_nodes": 1599,
+      "n_leaves": 800,
+      "depth": 16,
+      "leaf_min": 1,
+      "leaf_max": 1,
+      "leaf_mean": 1.0,
+      "split_features": [
+        0
+      ]
+    },
+    "(x,y) | cubic | 0.1 | 1000": {
+      "train_rmse": 0.14443538276500503,
+      "test_rmse": 0.14876763905254553,
+      "n_nodes": 1,
+      "n_leaves": 1,
+      "depth": 0,
+      "leaf_min": 800,
+      "leaf_max": 800,
+      "leaf_mean": 800.0,
+      "split_features": []
+    },
+    "(x,y) | cubic | 0.1 | 50": {
+      "train_rmse": 0.052944772991369314,
+      "test_rmse": 0.061546265925816655,
+      "n_nodes": 73,
+      "n_leaves": 37,
+      "depth": 9,
+      "leaf_min": 1,
+      "leaf_max": 49,
+      "leaf_mean": 21.62162162162162,
+      "split_features": [
+        0
+      ]
+    },
+    "(x,y) | cubic | 0.1 | 1": {
+      "train_rmse": 0.0,
+      "test_rmse": 0.07882942432377563,
+      "n_nodes": 1599,
+      "n_leaves": 800,
+      "depth": 22,
+      "leaf_min": 1,
+      "leaf_max": 1,
+      "leaf_mean": 1.0,
+      "split_features": [
+        0
+      ]
+    },
+    "(x,x^2,x^3,y) | cubic | 0.1 | 1000": {
+      "train_rmse": 0.14443538276500503,
+      "test_rmse": 0.14876763905254553,
+      "n_nodes": 1,
+      "n_leaves": 1,
+      "depth": 0,
+      "leaf_min": 800,
+      "leaf_max": 800,
+      "leaf_mean": 800.0,
+      "split_features": []
+    },
+    "(x,x^2,x^3,y) | cubic | 0.1 | 50": {
+      "train_rmse": 0.052944772991369314,
+      "test_rmse": 0.061546265925816655,
+      "n_nodes": 73,
+      "n_leaves": 37,
+      "depth": 9,
+      "leaf_min": 1,
+      "leaf_max": 49,
+      "leaf_mean": 21.62162162162162,
+      "split_features": [
+        0
+      ]
+    },
+    "(x,x^2,x^3,y) | cubic | 0.1 | 1": {
+      "train_rmse": 0.0,
+      "test_rmse": 0.07882942432377563,
+      "n_nodes": 1599,
+      "n_leaves": 800,
+      "depth": 22,
+      "leaf_min": 1,
+      "leaf_max": 1,
+      "leaf_mean": 1.0,
+      "split_features": [
+        0
+      ]
+    }
+  },
+  "q10": [
+    {
+      "func": "linear",
+      "eps": 0.01,
+      "schema": "(x,y)",
+      "linear": 0.005738891235695781,
+      "tree_1000": 0.6005016807481766,
+      "tree_50": 0.02529633135915233,
+      "tree_1": 0.008031763035148402,
+      "winner": "linear"
+    },
+    {
+      "func": "linear",
+      "eps": 0.01,
+      "schema": "(x,x^2,x^3,y)",
+      "linear": 0.00574400673483183,
+      "tree_1000": 0.6005016807481766,
+      "tree_50": 0.02529633135915233,
+      "tree_1": 0.008031763035148402,
+      "winner": "linear"
+    },
+    {
+      "func": "linear",
+      "eps": 0.1,
+      "schema": "(x,y)",
+      "linear": 0.05738891235695704,
+      "tree_1000": 0.603002034867665,
+      "tree_50": 0.06360826350513506,
+      "tree_1": 0.07878605783743314,
+      "winner": "linear"
+    },
+    {
+      "func": "linear",
+      "eps": 0.1,
+      "schema": "(x,x^2,x^3,y)",
+      "linear": 0.05744006734770161,
+      "tree_1000": 0.603002034867665,
+      "tree_50": 0.06360826350513506,
+      "tree_1": 0.07878605783743314,
+      "winner": "linear"
+    },
+    {
+      "func": "cubic",
+      "eps": 0.01,
+      "schema": "(x,y)",
+      "linear": 0.02214132491861429,
+      "tree_1000": 0.13684560583503408,
+      "tree_50": 0.008732543345344313,
+      "tree_1": 0.007883373756290401,
+      "winner": "tree(m=1)"
+    },
+    {
+      "func": "cubic",
+      "eps": 0.01,
+      "schema": "(x,x^2,x^3,y)",
+      "linear": 0.00574400673476786,
+      "tree_1000": 0.13684560583503408,
+      "tree_50": 0.008732543345344313,
+      "tree_1": 0.007883373756290401,
+      "winner": "linear"
+    },
+    {
+      "func": "cubic",
+      "eps": 0.1,
+      "schema": "(x,y)",
+      "linear": 0.06286716791746165,
+      "tree_1000": 0.14876763905254553,
+      "tree_50": 0.061546265925816655,
+      "tree_1": 0.07882942432377563,
+      "winner": "tree(m=50)"
+    },
+    {
+      "func": "cubic",
+      "eps": 0.1,
+      "schema": "(x,x^2,x^3,y)",
+      "linear": 0.05744006734769988,
+      "tree_1000": 0.14876763905254553,
+      "tree_50": 0.061546265925816655,
+      "tree_1": 0.07882942432377563,
+      "winner": "linear"
+    }
+  ],
+  "q11": [
+    {
+      "min_records": 2,
+      "train_rmse": 0.0,
+      "test_rmse": 0.1746044953760167,
+      "n_leaves": 160
+    },
+    {
+      "min_records": 4,
+      "train_rmse": 0.05674542981466738,
+      "test_rmse": 0.14745199591322544,
+      "n_leaves": 74
+    },
+    {
+      "min_records": 8,
+      "train_rmse": 0.08616719891855287,
+      "test_rmse": 0.13578213097697003,
+      "n_leaves": 37
+    },
+    {
+      "min_records": 16,
+      "train_rmse": 0.11245526519239488,
+      "test_rmse": 0.1635024253809233,
+      "n_leaves": 17
+    },
+    {
+      "min_records": 32,
+      "train_rmse": 0.13317035173623856,
+      "test_rmse": 0.1611376117956514,
+      "n_leaves": 10
+    },
+    {
+      "min_records": 64,
+      "train_rmse": 0.2551746013830314,
+      "test_rmse": 0.28629417224285075,
+      "n_leaves": 4
+    },
+    {
+      "min_records": 128,
+      "train_rmse": 0.30499216936864587,
+      "test_rmse": 0.34608229587218065,
+      "n_leaves": 2
+    },
+    {
+      "min_records": 256,
+      "train_rmse": 0.7388924283883771,
+      "test_rmse": 0.7496503295411813,
+      "n_leaves": 1
+    }
+  ]
+}
